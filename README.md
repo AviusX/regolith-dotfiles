@@ -3,13 +3,18 @@
 ###### Description: Dotfiles from my Regolith i3 rice
 
 ---
-<h3 align="center"> Screenshots </h3>
+<h3 align="center"><ins> Screenshots </ins></h3>
+<br />
 <p align="center">
        <img src="./screenshots/ss1.png" />
+       <br />
+       <br />
        <img src="./screenshots/ss2.png" />
 </p>
 
-<h3 align="center"> Installation </h3>
+<br />
+<h3 align="center"><ins> Installation </ins></h3>
+<br />
 
 
 #### Install and configure tryone-picom
@@ -29,6 +34,7 @@ sudo apt install -y i3xrocks-bluetooth;
 #### GTK theme and icon pack link
 - Theme- [Dracula](https://draculatheme.com/gtk)
 - Icons- [Zafiro Icons Purple](https://www.gnome-look.org/p/1209330/)
+- Firefox theme- [Dracula](https://addons.mozilla.org/en-US/firefox/addon/dracula-dark-colorscheme/)
 
 #### Font
 JetBrains Mono
