@@ -3,6 +3,14 @@
 ###### Description: Dotfiles from my Regolith i3 rice
 
 ---
+<h3 align="center"> Screenshots </h3>
+<p align="center">
+       <img src="./screenshots/ss1.png" />       
+</p>
+
+<h3 align="center"> Installation </h3>
+
+
 #### Commands to install themes and extensions-
 ```bash
 sudo apt install -y regolith-look-dracula;
@@ -13,8 +21,8 @@ sudo apt install -y i3xrocks-bluetooth;
 ```
 
 #### GTK theme and icon pack link
-Theme- [Dracula](https://draculatheme.com/gtk)
-Icons- [Zafiro Icons Purple](https://www.gnome-look.org/p/1209330/)
+- Theme- [Dracula](https://draculatheme.com/gtk)
+- Icons- [Zafiro Icons Purple](https://www.gnome-look.org/p/1209330/)
 
 #### Font
 JetBrains Mono
