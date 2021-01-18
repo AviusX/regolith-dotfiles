@@ -5,10 +5,16 @@
 ---
 <h3 align="center"> Screenshots </h3>
 <p align="center">
-       <img src="./screenshots/ss1.png" />       
+       <img src="./screenshots/ss1.png" />
+       <img src="./screenshots/ss2.png" />
 </p>
 
 <h3 align="center"> Installation </h3>
+
+
+#### Install and configure tryone-picom
+- Instructions to build and install tryone-picom [here](https://github.com/tryone144/picom/tree/feature/dual_kawase).
+- Copy `./.config/picom.conf` to `~/.config/picom.conf`.
 
 
 #### Commands to install themes and extensions-
