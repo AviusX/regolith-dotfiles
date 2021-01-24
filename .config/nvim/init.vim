@@ -7,7 +7,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
-Plug 'preservim/nerdtree'
+Plug 'Yggdroot/indentLine'
 
 " Customization
 Plug 'ap/vim-css-color'
@@ -28,9 +28,8 @@ call plug#end()
 
 " ================================= Remaps =================================
 
-" NERDTree
-nnoremap <C-n> :NERDTreeToggle<CR>
-nnoremap <C-f> :NERDTreeFind<CR>
+" coc-explorer
+nmap <space>e :CocCommand explorer<CR>
 
 " Tabs
 nnoremap <silent> <C-t> :tabnew<CR>
@@ -42,6 +41,13 @@ nnoremap <silent> <Space>f :call CocAction('format')<CR>
 inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>"
 
+" ========================== Coc-Explorer Settings =========================
+
+" Close explorer if it's the last window open
+autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
+
+" ==========================================================================
+"
 " ============================ General settings ============================
 set relativenumber
 set number
@@ -56,18 +62,6 @@ set shiftwidth=4
 " Disable writing temporary files after saving
 set nobackup
 set noundofile
-
-" ==========================================================================
-
-" ========================== NERDTree Settings =============================
-
-" Start NERDTree on startup and put the cursor back into the main pane
-autocmd VimEnter * NERDTree | wincmd p
-" Automatically exit vim when NERDTree is the last pane left.
-autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
-    \ quit | endif
-" Open the existing NERDTree on each new tab.
-autocmd BufWinEnter * silent NERDTreeMirror
 
 " ==========================================================================
 
