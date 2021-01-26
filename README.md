@@ -10,6 +10,9 @@
        <br />
        <br />
        <img src="./screenshots/ss2.png" />
+       <br />
+       <br />
+       <img src="./screenshots/ss3.png" />
 </p>
 
 <br />
