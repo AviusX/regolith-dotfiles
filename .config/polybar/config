@@ -80,7 +80,7 @@ font-2 = NotoColorEmoji:fontformat=truetype:scale=10:antialias=false;
 font-3 = IPAGothic:fontformat=truetype:pixelsize=10:antialias=false;
 
 modules-left = i3 xwindow
-modules-right = backlight pulseaudio battery network date
+modules-right = spotify pulseaudio battery network date
 
 tray-position = right
 tray-padding = 10
@@ -340,15 +340,12 @@ label-disconnected = 睊
 
 ; ======================================================================
 
-[module/backlight]
-type = internal/xbacklight
-
-; XRandR output to get get values from
-; Default: the monitor defined for the running bar
-output = 
-
-; Create scroll handlers used to set the backlight value
-; Default: true
-enable-scroll = false
+[module/spotify]
+type = custom/script
+interval = 1
+; format-prefix = " "
+; format-prefix = ""
+exec = python3 ~/.config/polybar/spotify_module.py -f ' {artist}: {song}'
+format-underline = #1db954
 
 ; ======================================================================
