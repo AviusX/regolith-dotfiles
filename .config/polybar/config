@@ -80,12 +80,12 @@ font-2 = NotoColorEmoji:fontformat=truetype:scale=10:antialias=false;
 font-3 = IPAGothic:fontformat=truetype:pixelsize=10:antialias=false;
 
 modules-left = i3 xwindow
-modules-right = spotify pulseaudio battery network date
+modules-right = spotify pulseaudio mic-volume battery network date
 
 tray-position = right
 tray-padding = 10
 tray-background = ${colors.background-alt}
-tray-offset-x = 8
+tray-offset-x = 0
 tray-offset-y = 0
 tray-scale = 1.0
 
@@ -344,8 +344,19 @@ label-disconnected = 睊
 type = custom/script
 interval = 1
 ; format-prefix = " "
-; format-prefix = ""
-exec = python3 ~/.config/polybar/spotify_module.py -f ' {artist}: {song}'
+format-prefix = ""
+exec = python3 ~/.config/polybar/spotify_module.py -f ' {artist}: {song}'
 format-underline = #1db954
+
+; ======================================================================
+
+[module/mic-volume]
+type = custom/script
+interval = 0.5
+format =  <label>
+click-left = bash ~/.config/polybar/mic-volume.sh mute-vol
+scroll-up = bash ~/.config/polybar/mic-volume.sh inc-vol
+scroll-down = bash ~/.config/polybar/mic-volume.sh dec-vol
+exec = bash ~/.config/polybar/mic-volume.sh show-vol
 
 ; ======================================================================

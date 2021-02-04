@@ -1,4 +1,4 @@
 # Defined in - @ line 1
-function less --wraps=batcat --description 'alias less batcat'
-  batcat  $argv;
+function less --wraps=bat --description 'alias less bat'
+  bat  $argv;
 end
