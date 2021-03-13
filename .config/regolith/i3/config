@@ -91,7 +91,7 @@ set_from_resource $ws10_key i3-wm.workspace.10.key 0
 
 ## Launch // Terminal // <> Enter ##
 set_from_resource $i3-wm.binding.terminal i3-wm.binding.terminal Return
-bindsym $mod+$i3-wm.binding.terminal exec /usr/bin/alacritty
+bindsym $mod+$i3-wm.binding.terminal exec /usr/bin/kitty
 
 ## Launch // Browser // <><Shift> Enter ##
 set_from_resource $i3-wm.binding.browser i3-wm.binding.browser Shift+Return
@@ -675,7 +675,7 @@ exec --no-startup-id $i3-wm.program.3
 # ===========================================
 
 assign [class="Firefox"]					$ws1
-assign [class="Brave-browser"]				$ws1
+assign [class="Brave-browser"]				$ws5
 assign [class="discord"]					$ws3
 assign [class="Code"]						$ws4
 

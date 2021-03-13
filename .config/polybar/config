@@ -75,12 +75,12 @@ module-margin-left = 0
 module-margin-right = 1
 
 font-0 = JetBrainsMonoMedium, Medium:pixelsize=12;
-font-1 = JetBrainsMono Nerd Font Mono, Medium:pixelsize=20;
+font-1 = JetBrainsMono Nerd Font Mono, Medium:pixelsize=17.5;
 font-2 = NotoColorEmoji:fontformat=truetype:scale=10:antialias=false;
 font-3 = IPAGothic:fontformat=truetype:pixelsize=10:antialias=false;
 
 modules-left = i3 xwindow
-modules-right = spotify pulseaudio mic-volume battery network date
+modules-right = spotify bluetooth pulseaudio mic-volume battery network date
 
 tray-position = right
 tray-padding = 10
@@ -360,3 +360,14 @@ scroll-down = bash ~/.config/polybar/mic-volume.sh dec-vol
 exec = bash ~/.config/polybar/mic-volume.sh show-vol
 
 ; ======================================================================
+
+[module/bluetooth]
+type = custom/script
+exec = ~/.config/polybar/bluetooth-module.sh
+tail = true
+format =  <label>
+; click-left = ~/polybar-scripts/system-bluetooth-bluetoothctl.sh --toggle &
+format-underline = #0082fc
+
+; ======================================================================
+; vim:ft=dosini
