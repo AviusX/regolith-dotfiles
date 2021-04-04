@@ -19,13 +19,13 @@
 ; ======================================================================
 
 [colors]
-background = #282a36
-background-wm = #282a36
-background-alt = #44475a
-foreground = #f8f8f2
-foreground-alt = #44475a
-primary = #bd93f9
-alert = #ff5555
+background = #1a1c23
+background-wm = #1a1c23
+background-alt = #2e303e
+foreground = #fab795
+foreground-alt = #2e303e
+primary = #e95678
+alert = #e9436f
 
 ; ======================================================================
 

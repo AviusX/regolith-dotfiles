@@ -19,7 +19,10 @@ Plug 'drewtempelmeyer/palenight.vim'
 Plug 'dracula/vim', { 'as': 'dracula' }
 
 " Language Specific
-Plug 'dart-lang/dart-vim-plugin'
+Plug 'dart-lang/dart-vim-plugin' " dart
+Plug 'yuezk/vim-js' " js
+Plug 'HerringtonDarkholme/yats.vim' " ts
+Plug 'maxmellon/vim-jsx-pretty' " tsx
 " ===================================
 
 call plug#end()
@@ -68,7 +71,7 @@ set noundofile
 " ============================ Lightline Config ============================
 
 let g:lightline = {
-      \ 'colorscheme': 'dracula',
+      \ 'colorscheme': 'horizon',
       \ }
 set laststatus=2
 
@@ -76,10 +79,17 @@ set laststatus=2
 
 " ================================= Theme ==================================
 
-autocmd ColorScheme * highlight Normal ctermbg=NONE guibg=NONE
+" ========= Setting correct colors ===========
+
+" autocmd ColorScheme * highlight Normal ctermbg=NONE guibg=NONE
+" --- or ---
+set termguicolors
+
+" ============================================
+
 " Setting NERDtree pane separator appearance
 set fillchars=""
 highlight VertSplit guibg=Orange guifg=Black ctermbg=7 ctermfg=97
-colorscheme dracula
+colorscheme horizon
 
 " ==========================================================================
