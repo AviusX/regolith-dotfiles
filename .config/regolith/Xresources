@@ -1,3 +1,5 @@
 i3-wm.gaps.inner.size: 10
+i3-wm.client.focused.color.child_border: #bd93f9
+i3-wm.client.focused.color.indicator: #8be9fd
 gnome.wallpaper: 
 gnome.icon.theme: Zafiro-Icons-Purple
