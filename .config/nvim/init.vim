@@ -8,6 +8,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'Yggdroot/indentLine'
+Plug 'airblade/vim-accent'
 
 " Customization
 Plug 'ap/vim-css-color'

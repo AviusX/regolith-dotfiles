@@ -1,5 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =5
+let g:netrw_dirhistcnt =8
+let g:netrw_dirhist_8='/home/aviusx/Files/deployment-test/src'
+let g:netrw_dirhist_7='/home/aviusx/Files/Code/backdoor-frontend/.git'
+let g:netrw_dirhist_6='/home/aviusx/Files/Code/Python/Rock Paper Scissors'
 let g:netrw_dirhist_5='/home/aviusx/Files/Code/frigidsec/dpc-challenge-manager/.git'
 let g:netrw_dirhist_4='/home/aviusx/Files/Code/Practice/webdev-practice/RESTful Routing/RESTfulBlogApp'
 let g:netrw_dirhist_3='/home/aviusx/.config/kitty'
